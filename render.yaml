@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: yt-pot-provider
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerCommand: ""          # use default
+    healthCheckPath: /ping
+    envVars: []
